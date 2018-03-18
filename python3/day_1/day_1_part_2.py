@@ -16,7 +16,11 @@ def sum_digit_matches(circular_list: iter) -> int:
     return total_sum
 
 
-if __name__ == '__main__':
+def main():
     with open('input.txt') as input_file:
         input_text = input_file.readlines()[0].strip()
     print(sum_digit_matches(input_text))
+
+
+if __name__ == '__main__':
+    main()
