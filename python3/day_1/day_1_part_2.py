@@ -1,7 +1,7 @@
-from typing import List, Tuple
+from typing import Iterable, Tuple
 
 
-def get_number_pairs(number_list: str) -> List[Tuple[int, int]]:
+def get_number_pairs(number_list: str) -> Iterable[Tuple[int, int]]:
     mid = len(number_list) // 2
     repeat_list = number_list[mid:] + number_list[:mid]
     for number_pair in zip(number_list, repeat_list):

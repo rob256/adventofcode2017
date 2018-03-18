@@ -1,7 +1,7 @@
-from typing import List, Tuple
+from typing import Iterable, Tuple
 
 
-def get_num_pairs(circular_list: iter) -> List[Tuple[int, int]]:
+def get_num_pairs(circular_list: iter) -> Iterable[Tuple[int, int]]:
     """
     Generate a list of pairs:
     [(n, n+1), (n+1, n+2), ..., (n-1, n)]
