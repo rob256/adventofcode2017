@@ -1,4 +1,7 @@
-def get_num_pairs(circular_list):
+from typing import List, Tuple
+
+
+def get_num_pairs(circular_list: iter) -> List[Tuple[int, int]]:
     """
     Generate a list of pairs:
     [(n, n+1), (n+1, n+2), ..., (n-1, n)]
@@ -8,7 +11,7 @@ def get_num_pairs(circular_list):
         yield tuple(map(int, number_pair))
 
 
-def sum_diget_matches(circular_list):
+def sum_diget_matches(circular_list: iter) -> int:
     total_sum = 0
     for num1, num2 in get_num_pairs(circular_list):
         if num1 == num2:
